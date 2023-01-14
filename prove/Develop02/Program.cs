@@ -1,9 +1,16 @@
-using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop02 World!");
+        bool _showMenu = true;
+        if (_showMenu)
+        {
+            Menu.Entry.display();
+        }
+
     }
+
+
+
+
 }
