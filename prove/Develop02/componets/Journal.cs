@@ -17,6 +17,7 @@ namespace Menu
             Random rnd = new Random();
             int index = rnd.Next(questions.Count);
             Console.WriteLine(questions[index]);
+            string response = Console.ReadLine();
         }
 
         public static void display()
