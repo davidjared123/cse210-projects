@@ -13,22 +13,21 @@ namespace Menu
         "\n 3. Load" +
         "\n 4. Save" +
         "\n 5. Quit");
-
+                Journal journal = new Journal();
                 response = Console.ReadLine();
                 switch (response)
                 {
                     case "1":
-                        Journal j = new Journal();
-                        j.writeJournal();
+                        journal.writeJournal();
                         break;
                     case "2":
-                        Console.WriteLine("Display");
+                        journal.read();
                         break;
                     case "3":
-                        Console.WriteLine("Load");
+                        journal.load();
                         break;
                     case "4":
-                        Console.WriteLine("Save");
+                        journal.save_txt();
                         break;
                     case "5":
                         Console.WriteLine("Quit");
