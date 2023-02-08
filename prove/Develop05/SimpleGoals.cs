@@ -17,8 +17,9 @@ class SimpleGoals : Goals
 
         Save save = new Save();
         save.saveFile(dir, convertToString());
-        SetGoalsList(convertToString());
+        _goalsList.Add(convertToString());
         GetGoalsList();
+
 
     }
 

@@ -1,6 +1,6 @@
 class Goals
 {
-    protected List<string> _goalsList;
+    protected List<string> _goalsList = new List<string>();
     protected string _name;
     protected string _description;
     protected int _points;
