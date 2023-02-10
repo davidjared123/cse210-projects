@@ -29,9 +29,12 @@ class Goals
             case "1":
                 SimpleGoals simpleGoals = new SimpleGoals();
                 simpleGoals.SimpleGoalsRun();
+                GetGoalsList();
                 break;
             case "2":
-
+                EternalGoals eternalGoals = new EternalGoals();
+                eternalGoals.EternalGoalsRun();
+                GetGoalsList();
                 break;
             case "3":
 
@@ -52,10 +55,12 @@ class Goals
 
     public void GetGoalsList()
     {
-        foreach (var item in _goalsList)
-        {
-            Console.WriteLine(item);
-        }
+        // foreach (var item in _goalsList)
+        // {
+        //     Console.Write(item);
+        // }
+
+        Console.WriteLine(_goalsList.Count());
 
     }
 

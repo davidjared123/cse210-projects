@@ -1,6 +1,8 @@
 using System.IO;
 class SimpleGoals : Goals
 {
+
+    protected List<string> example = new List<string>();
     public void SimpleGoalsRun()
     {
         SetMessage("What is the name of your goal? ");
@@ -15,12 +17,15 @@ class SimpleGoals : Goals
         Console.Write(convertToString());
         string dir = Directory.GetCurrentDirectory() + "\\Files\\" + "prueba.txt";
 
-        Save save = new Save();
-        save.saveFile(dir, convertToString());
-        _goalsList.Add(convertToString());
-        GetGoalsList();
-
-
+        // Save save = new Save();
+        // save.saveFile(dir, convertToString());
+        // _goalsList.Add(convertToString());
+        SetGoalsList(convertToString());
+        // GetGoalsList();
+        for (int i = 0; i < _goalsList.Count(); i++)
+        {
+            Console.WriteLine(_goalsList[i]);
+        }
     }
 
     public string convertToString()

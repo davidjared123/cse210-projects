@@ -13,8 +13,11 @@ class EternalGoals : Goals
         Console.Write(convertToString());
         string dir = Directory.GetCurrentDirectory() + "\\Files\\" + "prueba.txt";
 
-        Save save = new Save();
-        save.saveFile(dir, convertToString());
+        // Save save = new Save();
+        // save.saveFile(dir, convertToString());
+
+        _goalsList.Add(convertToString());
+        // GetGoalsList();
 
     }
 
