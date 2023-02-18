@@ -5,6 +5,6 @@ class Order : Product
     List<Costumer> _costumers = new List<Costumer>();
 
     Product product = new Product();
-    product.setProduct("id", "name", 1, 5);
+    // product.setProduct("id" _id, "name", 1, 5);
 
 }
